@@ -1,3 +1,4 @@
+
 # LeadSense — AI-Powered Lead Scoring for Smarter Customer Acquisition
 
 **SBI Hackathon @ GFF 2026**
@@ -57,8 +58,7 @@ Backend runs on `http://localhost:5000`
 Just open `frontend/index.html` and `frontend/dashboard.html` in your browser.
 
 ## Team
-- [Your Name] — Role
-- [Teammate Name] — Role
+Roshini S 
+Vishalini K
+Tharunya P
 
-## Demo Video
-[Add your demo video link here]
