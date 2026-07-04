@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SBI Demo Bank — LeadSense Prototype</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏦 Demo Bank</h1>
+    <nav>
+      <button onclick="visitPage('home')">Home</button>
+      <button onclick="visitPage('homeloan')">Home Loan</button>
+      <button onclick="visitPage('calculator')">EMI Calculator</button>
+      <button onclick="visitPage('apply')">Apply Now</button>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="home" class="page active">
+      <h2>Welcome to Demo Bank</h2>
+      <p>Explore our home loans, calculators, and apply online in minutes.</p>
+    </section>
+
+    <section id="homeloan" class="page">
+      <h2>Home Loan</h2>
+      <p>Get home loans starting at attractive interest rates. Explore eligibility and benefits.</p>
+    </section>
+
+    <section id="calculator" class="page">
+      <h2>EMI Calculator</h2>
+      <p>Loan Amount: <input type="number" id="loanAmount" value="1000000"></p>
+      <p>Tenure (years): <input type="number" id="tenure" value="10"></p>
+      <button onclick="useCalculator()">Calculate EMI</button>
+      <p id="emiResult"></p>
+    </section>
+
+    <section id="apply" class="page">
+      <h2>Loan Application</h2>
+      <form id="applyForm">
+        <input type="text" placeholder="Full Name" required><br><br>
+        <input type="text" placeholder="Phone Number" required><br><br>
+        <input type="text" placeholder="PAN Number"><br><br>
+        <button type="button" onclick="startApplication()">Start Application</button>
+        <button type="button" onclick="completeApplication()">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Visitor ID: <span id="visitorIdDisplay"></span> | Live Score: <span id="liveScore">-</span> <span id="liveLabel"></span></p>
+    <p><a href="dashboard.html">Go to Staff Dashboard →</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
